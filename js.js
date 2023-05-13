@@ -24,6 +24,8 @@ const hora =dia.getHours()
 var bv = document.querySelector('.bv')
 
 
+var setores = document.querySelector('.setores')
+var prin = document.querySelector('.setoresprin')
 
 
 switch(diahoje){
@@ -97,6 +99,9 @@ switch(diahoje){
             bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Sexta-Feira`
         } else if(hora >=12 && hora<18){
             bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Sexta-Feira`
+            setores.innerHTML =`Promoção do setor Hortifrute`
+            prin.innerHTML = `Sexta-Feira Verde`
+            prin.style.color = 'green' 
         }else if(hora>=18 && hora<=20){
             bv.innerHTML =` Boa noite ${nome} <br> Venha Conferir as Promoçoes de Sexta-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
         } else{
@@ -111,6 +116,8 @@ switch(diahoje){
             bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Sabado`
         } else if(hora >=12 && hora<18){
             bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Sabado`
+            setores.innerHTML =`Promoçoes de Sabado`
+            prin.innerHTML = `Promoções do Dia`
         }else if(hora>=18 && hora<=19){
             bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Sabado, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
         } else{

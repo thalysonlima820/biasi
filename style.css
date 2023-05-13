@@ -208,6 +208,7 @@ header .navegcao-primaria li a:hover:after{
     color: #fff;
     font-size: 1.6rem;
     font-weight: 500;
+
 }
 .my_services ul li p{
     color: rgb(236, 236, 54);
@@ -295,4 +296,33 @@ header .navegcao-primaria li a:hover:after{
     width: 20px;
     border-radius: 50%;
     background-color: #dc3545;
+}
+
+
+
+
+.cupom{
+    margin-top: 190px;
+    margin-left: 90px;
+    border: 3px solid white;
+    border-radius: 15px;
+    width: 500px;
+    height: 200px;
+}
+.cupom p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.cupom h3{
+    font-size: 1em;
+    color: #ea1228;
+    text-align: center;
+    margin-top: 30px;
+}
+.cupom input{
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 1em;
+    border: none;
 }
