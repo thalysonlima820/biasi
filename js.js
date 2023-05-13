@@ -1,0 +1,128 @@
+function menumobo(){
+    const navmenu = document.querySelector('.navegcao-primaria')
+
+
+    const ativamenu =document.querySelector('.fa-bars')
+    
+    ativamenu.addEventListener('click', ()=>{
+        ativamenu.classList.toggle ('fa-x')
+        navmenu.classList.toggle ('ativado')
+    })
+    
+}
+
+menumobo()
+
+
+const nome = window.prompt(`qual seu nome?`)
+const dia = new Date()
+const diahoje = dia.getDay()
+
+const hora =dia.getHours()
+
+
+var bv = document.querySelector('.bv')
+
+
+
+
+switch(diahoje){
+    case 0:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome} <br> Venha Conferir as Promoçoes de domingo`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome} <br> Venha Conferir as Promoçoes de domingo`
+        } else if(hora >=12 && hora<13){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes dedomingo, Fecharemos em Breve`
+        } else{
+            bv.innerHTML =` Boa noite ${nome} <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Segunda-Feira`
+        }
+        break
+    case 1:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Segunda-Feira`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Segunda-Feira`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Segunda-Feira`
+        }else if(hora>=18 && hora<=20){
+            bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Segunda-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Terça-Feira`
+        }
+        break
+    case 2:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Terça-Feira`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Terça-Feira`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Terça-Feira`
+        }else if(hora>=18 && hora<=19){
+            bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Terça-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Quarta-Feira`
+        }
+        break
+    case 3:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Quarta-Feira`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Quarta-Feira`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Quarta-Feira`
+        }else if(hora>=18 && hora<=19){
+            bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Quarta-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Quinta-Feira`
+        }
+        break
+    case 4:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Quinta-Feira`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Quinta-Feira`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Quinta-Feira`
+        }else if(hora>=18 && hora<=19){
+            bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Quinta-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Sexta-Feira`
+        }
+        break
+    case 5:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Sexta-Feira`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Sexta-Feira`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Sexta-Feira`
+        }else if(hora>=18 && hora<=20){
+            bv.innerHTML =` Boa noite ${nome} <br> Venha Conferir as Promoçoes de Sexta-Feira, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Sabado`
+        }
+
+        break
+    case 6:
+        if(hora >= 1 && hora<6){
+            bv.innerHTML =` Boa madrugada ${nome}<br>  Venha Conferir as Promoçoes de Sabado`
+        } else if(hora >=6 && hora <12){
+            bv.innerHTML =` Bom Dia ${nome}<br>  Venha Conferir as Promoçoes de Sabado`
+        } else if(hora >=12 && hora<18){
+            bv.innerHTML =` Boa Tarde ${nome}<br>  Venha Conferir as Promoçoes de Sabado`
+        }else if(hora>=18 && hora<=19){
+            bv.innerHTML =` Boa noite ${nome}<br>  Venha Conferir as Promoçoes de Sabado, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
+        } else{
+            bv.innerHTML =` Boa noite ${nome}<br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Domingo`
+        }
+        break
+}
+
+
+
+// const btn=document.querySelector('.pula i')
+
+// btn.addEventListener('click', function(){
+//     window.scroll({top: window.innerHeight, behavior: 'smooth'})
+// })
