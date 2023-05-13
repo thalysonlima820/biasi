@@ -73,6 +73,25 @@ header .navegcao-primaria li a:hover:after{
         justify-content: space-between;
         padding: 30px 100px;
     }
+    .gg ul{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .cupom{
+        position: relative;
+        top: -200px;
+        left: -150px;
+        margin-top: 0;
+    }
+
+    }
+    .pula{
+        max-width: 100px;
+        display: grid;
+        grid-column: 1/1;
+        top: -200px;
+    }
     #oi{
         display: block;
     }
