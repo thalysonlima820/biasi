@@ -68,6 +68,13 @@ header .navegcao-primaria li a:hover:after{
 
 
 @media (max-width: 992px){
+
+    header .logo{
+        position: relative;
+        left: -99px;
+    }
+
+
     header{
         justify-content: space-between;
         padding: 30px 100px;
