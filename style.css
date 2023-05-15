@@ -82,10 +82,13 @@ header .navegcao-primaria li a:hover:after{
     .cupom {
         position: absolute;
         width: 20px;
+        
     }
     .cupomm .cupom{
         width: 300px;
         height: 100px;
+        margin-top: 100px;
+        margin-left: 0;
     }
     .cupomm .cupom h3{
         font-size: 20px;
@@ -334,6 +337,8 @@ header .navegcao-primaria li a:hover:after{
     height: 130px;
     position: relative;
     border-radius: 5px;
+    margin-top: 200px;
+    margin-left: 100px;
 }
 .cupom h3{
     margin-top: 14px;
@@ -350,4 +355,16 @@ header .navegcao-primaria li a:hover:after{
     position: absolute;
     margin-left: 20%;
     margin-top: 20px;
+}
+.btncum{
+    left: 280px;
+    border: 2px solid #dc3545;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+}
+.btncum:hover{
+    background-color: #ff5d56;
 }
