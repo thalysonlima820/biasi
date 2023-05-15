@@ -73,7 +73,9 @@ header .navegcao-primaria li a:hover:after{
         position: relative;
         left: -99px;
     }
-
+    .cupomm .btncum{
+        left: 150px;
+    }
 
     header{
         justify-content: space-between;
