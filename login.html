@@ -292,7 +292,7 @@
 
 
 .tu{
-           
+            z-index: -10;       
             width: 40%;
             height: 40%;
             fill: transparent;
@@ -477,11 +477,13 @@
         window.addEventListener("load", function() {
   const loader = document.querySelector(".tu");
   const conteudo = document.querySelector(".conteudo");
+  const car = document.querySelector(".car");
 
   // Simula um atraso de 2 segundos antes de exibir o conteúdo
   setTimeout(function() {
-    conteudo.style.display = "none"; // Exibe o conteúdo
+   
     loader.style.display = "none"; // Oculta o elemento de carregamento
+    car.style.zIndex = "-999";
     conteudo.style.display = "block"; // Exibe o conteúdo
   }, 3000);
 });

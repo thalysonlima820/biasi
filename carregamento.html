@@ -14,11 +14,12 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            
         }
 
 
 .tu{
-           
+         
             width: 40%;
             height: 40%;
             fill: transparent;
@@ -27,6 +28,8 @@
             stroke-dasharray: 2266;
             stroke-dashoffset: 0;
             animation: acao 7s infinite;
+            
+            
         }
         @keyframes acao {
             from{
@@ -43,7 +46,17 @@
         }
         .conteudo{
             display: none;
+            
         }
+
+
+        @keyframes a {
+            top{
+                margin: 500%;
+            }
+        }
+
+
 
     </style>
 </head>
@@ -82,13 +95,15 @@
 window.addEventListener("load", function() {
   const loader = document.querySelector(".tu");
   const conteudo = document.querySelector(".conteudo");
+  const car = document.querySelector(".car");
 
   // Simula um atraso de 2 segundos antes de exibir o conteúdo
   setTimeout(function() {
-    conteudo.style.display = "none"; // Exibe o conteúdo
-    loader.style.display = "none"; // Oculta o elemento de carregamento
+   
+    //loader.style.display = "none"; 
+    car.style.zIndex = "-999";
     conteudo.style.display = "block"; // Exibe o conteúdo
-  }, 3000);
+  }, 1000);
 });
 
 
