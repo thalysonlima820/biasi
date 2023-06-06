@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: black;
+        }
+        .car{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+.tu{
+           
+            width: 40%;
+            height: 40%;
+            fill: transparent;
+            stroke: red;
+            stroke-width: 4px;
+            stroke-dasharray: 2266;
+            stroke-dashoffset: 0;
+            animation: acao 7s infinite;
+        }
+        @keyframes acao {
+            from{
+                stroke-dashoffset: 2266;
+            }
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+
+
+        h1{
+            color: aliceblue;
+        }
+        .conteudo{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="car">
+    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="300px" height="300px" viewBox="0 0 474.558 474.559"
+    xml:space="preserve">
+<g>
+   <path class="tu" d="M94.715,189.091c-2.375,2.838-3.37,6.582-2.719,10.225l28.65,160.076c1.066,5.959,6.251,10.298,12.305,10.298h34.664
+       c6.903,0,12.5-5.597,12.5-12.5V197.113c0-6.903-5.597-12.5-12.5-12.5h-63.314C100.6,184.613,97.09,186.253,94.715,189.091z
+        M155.115,209.613v135.076h-11.703l-24.176-135.076H155.115z M213.75,369.689h47.057c6.903,0,12.5-5.597,12.5-12.5V197.113
+       c0-6.903-5.597-12.5-12.5-12.5H213.75c-6.903,0-12.5,5.597-12.5,12.5v160.076C201.25,364.094,206.846,369.689,213.75,369.689z
+        M226.25,209.613h22.057v135.076H226.25V209.613L226.25,209.613z M306.942,369.689h34.664c6.054,0,11.238-4.338,12.305-10.298
+       l28.65-160.076c0.65-3.643-0.345-7.387-2.72-10.225s-5.886-4.478-9.586-4.478h-63.313c-6.903,0-12.5,5.597-12.5,12.5v160.076
+       C294.442,364.094,300.039,369.689,306.942,369.689z M319.442,209.613h35.879l-24.176,135.076h-11.703V209.613z M5.848,120.881
+       l16.034,10.077c-0.342,1.139-0.525,2.347-0.525,3.598v60.988c0,6.903,5.597,12.5,12.5,12.5H46.69l35.345,197.482
+       c1.066,5.959,6.251,10.298,12.305,10.298h285.878c6.054,0,11.237-4.338,12.305-10.298l35.345-197.482h12.833
+       c6.903,0,12.5-5.597,12.5-12.5v-60.988c0-1.25-0.184-2.458-0.524-3.598l16.033-10.077c2.808-1.764,4.799-4.571,5.535-7.803
+       c0.737-3.232,0.161-6.625-1.603-9.432l-24.55-39.062c-3.673-5.846-11.391-7.605-17.234-3.932l-97.704,61.403h-191.75L43.7,60.653
+       c-5.843-3.673-13.561-1.914-17.234,3.932l-24.55,39.062c-1.764,2.807-2.34,6.2-1.603,9.432
+       C1.05,116.311,3.042,119.117,5.848,120.881z M433.576,88.471l11.246,17.895l-24.966,15.69h-39.72L433.576,88.471z M336.754,147.055
+       h86.703h4.742v35.988h-10.794c-6.054,0-11.238,4.338-12.305,10.298l-35.346,197.482H104.8L69.457,193.342
+       c-1.066-5.959-6.251-10.298-12.305-10.298H46.357v-35.988h4.742h86.703L336.754,147.055L336.754,147.055z M40.981,88.471
+       l53.439,33.584H54.7l-24.966-15.69L40.981,88.471z"/>
+</g>
+</svg>
+</div>
+
+<div class="conteudo">
+    <h1 >frgerg</h1>
+</div>
+
+</body>
+<script>
+window.addEventListener("load", function() {
+  const loader = document.querySelector(".tu");
+  const conteudo = document.querySelector(".conteudo");
+
+  // Simula um atraso de 2 segundos antes de exibir o conteúdo
+  setTimeout(function() {
+    conteudo.style.display = "none"; // Exibe o conteúdo
+    loader.style.display = "none"; // Oculta o elemento de carregamento
+    conteudo.style.display = "block"; // Exibe o conteúdo
+  }, 3000);
+});
+
+
+
+
+</script>
+</html>

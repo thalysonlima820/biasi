@@ -381,13 +381,13 @@ header .navegcao-primaria li a:hover:after{
    .foto .cotente{
         height: 320px;
         width: 345px;
+      
     }
-   .foto .bar{
-        width: 40px;
-    height: 20px;
-    }
+    .foto .bar{
+        width: 50px;
+        height: 17px;
 }
-
+}
 
 .foto{
     position: relative;

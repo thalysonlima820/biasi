@@ -164,27 +164,18 @@ switch(diahoje){
 }
 
 
+let count = 1
+document.getElementById('slide1').checked = true;
 
-// const btn=document.querySelector('.pula i')
+setInterval( function(){
+    nextimg()
+}, 3000)
 
-// btn.addEventListener('click', function(){
-//     window.scroll({top: window.innerHeight, behavior: 'smooth'})
-// })
+function nextimg(){
+    count ++;
+    if(count>4){
+        count =1
+    }
 
-
-let count = 1;
-let intervalId = setInterval(nextimg, 3000);
-
-function nextimg() {
-  count++;
-  if (count > 4) {
-    count = 1;
-  }
-
-  document.getElementById('slide' + count).checked = true;
+    document.getElementById('slide'+count).checked = true;
 }
-
-// adiciona um event listener para o evento "click" na página
-document.addEventListener('click', function() {
-  clearInterval(intervalId); // para o intervalo
-});

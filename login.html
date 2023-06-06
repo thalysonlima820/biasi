@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #777;
+        }
+        #cont {
+            margin-left: 20%;
+            margin-top: 10%;
+            position: relative;
+            width: 650px;
+            height: 380px;
+            perspective: 900px;
+            left: 20px;
+            top: 50px;
+        }
+
+        #carta {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 2s ease;
+            
+        }
+
+        #frent {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        #tras {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+        }
+
+        .login {
+            position: relative;
+            width: 650px;
+            height: 350px;
+            border-radius: 15px;
+        }
+
+        .lado1 {
+            background-color: #f6383b;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .lado2 {
+            background-color: #10213D;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 50%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .cada {
+            display: flex;
+            margin: 5px;
+            margin-left: 160px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .cada a {
+            text-decoration: none;
+            margin: 0 8px;
+            color: white;
+        }
+
+        .ca {
+            background-color: #040e1e;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .ca1 {
+            margin-right: 0;
+            background: #f6383b;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 5px;
+            cursor: pointer;
+           
+        }
+        .ca:hover{
+            box-shadow: 6px 6px 6px black;
+            background-color: #f6383b;
+            cursor: pointer;
+        }
+        .ca:hover + .ca1{
+            background-color: #040e1e;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .lado12 {
+            background-color: #f6383b;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .lado22 {
+            background-color: #10213D;
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            left: 50%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 1;
+        }
+
+        .tela {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 2px solid white;
+            color: white;
+        }
+
+        .inputsubmit {
+            background: #ce2225;
+            border: none;
+            padding: 10px;
+            width: 50%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .inputsubmit:hover {
+            background: #a91517;
+        }
+
+        .cv {
+            background-color: #f6383b;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 5px;
+            z-index: 4;
+        }
+
+
+        .cv2 {
+            background-color: #0d1a2e;
+            margin-right: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 5px;
+            z-index: 4;
+            cursor: pointer;
+        }
+
+        .gir {
+            transform: rotateY(180deg);
+        }
+
+
+        #btnCadastro {
+            background-color: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+        .cv2:hover {
+            box-shadow: 6px 6px 6px black;
+            background-color: #f6383b;
+        }
+        .cv2:hover + .cv{
+            background-color: #040e1e;
+        }
+
+
+
+    
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            letter-spacing: 2px;
+            margin-left: 15%;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: white;
+            pointer-events: none;
+            transition: .5s;
+            margin-left: 15%;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+
+        #submit{
+            background: #ce2225;
+            margin-left: 40%;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background: #8c1315;
+        }
+        .titulo{
+            margin-left: 10px;
+            color: white;
+        }
+
+
+        img{
+            width: 100px;
+            height: 200px;
+            margin-top: -5%;
+        }
+        .img2{
+            margin-left: -20px;
+        }
+        .img1{
+            margin-left: 10px;
+        }
+        .img3{
+            margin-left: -20px;
+        }
+
+        .biasi{
+            font-size: 3.5em;
+            margin-left: 24%;
+            margin-top: 30%;
+        }
+
+
+        .car{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+
+.tu{
+           
+            width: 40%;
+            height: 40%;
+            fill: transparent;
+            stroke: red;
+            stroke-width: 4px;
+            stroke-dasharray: 2266;
+            stroke-dashoffset: 0;
+            animation: acao 7s infinite;
+        }
+        @keyframes acao {
+            from{
+                stroke-dashoffset: 2266;
+            }
+            to{
+                stroke-dashoffset: 0;
+            }
+        }
+
+
+        h1{
+            color: aliceblue;
+        }
+        .conteudo{
+            display: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="conteudo">
+    <div id="cont">
+        <div id="carta">
+            <div class="login" id="frent">
+                <div class="lado1">
+                    
+
+                    <h1 class="biasi">BIASI</h1>
+
+
+
+                    <img class="img1" src="bi/abobrinha.png" alt="">
+                    <img class="img2"  src="bi/banana.png" alt="">
+                    <img class="img3"  src="bi/maracuja.png" alt="">
+
+
+
+
+
+
+
+
+                </div>
+                <div class="lado2">
+                    <div class="cada">
+                        <div class="ca"><button class="btn" id="btn" onclick="apertar()">Login</button></div>
+                        <div class="ca1"><a href="">Cadastro</a></div>
+                    </div>
+                    <div class="text">
+                        
+                        <div class="box">
+                            <form action=".php" method="POST">
+                              
+                                <h1 class="titulo">Cadastro</h1>
+                                    
+                                    <div class="inputBox">
+                                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                                        <label for="nome" class="labelInput">Nome</label>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="text" name="email" id="email" class="inputUser" required>
+                                        <label for="email" class="labelInput">Email</label>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox">
+                                        <input type="password" name="senha" id="senha" class="inputUser" required>
+                                        <label for="senha" class="labelInput">Senha</label>
+                                    </div>
+                                   
+                                    <br>
+                                    <input type="submit" name="entar" id="submit" value="Cadastrar">
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="login" id="tras">
+                <div class="lado12"> 
+                    
+                
+                
+
+
+
+
+
+
+
+
+
+                
+                </div>
+                <div class="lado22">
+                 
+
+                    <div class="cada de">
+                        <div class="cv"> <a href="">Login</a></div>
+                        <div class="cv2"><button id="btnCadastro" onclick="apertar()">Cadastro</button></div>
+                    </div>
+                    <div class="text">
+                        <div class="tela">
+                            <h1>Login</h1>
+                            <form action="testeLogin.php" method="POST">
+                                <input type="text" name="email" placeholder="Email">
+                                <br><br>
+                                <input type="password" name="senha" placeholder="Senha">
+                                <br><br>
+                                <input class="inputsubmit" type="submit" name="cadastra" value="Entrar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="car">
+    <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="300px" height="300px" viewBox="0 0 474.558 474.559"
+    xml:space="preserve">
+<g>
+   <path class="tu" d="M94.715,189.091c-2.375,2.838-3.37,6.582-2.719,10.225l28.65,160.076c1.066,5.959,6.251,10.298,12.305,10.298h34.664
+       c6.903,0,12.5-5.597,12.5-12.5V197.113c0-6.903-5.597-12.5-12.5-12.5h-63.314C100.6,184.613,97.09,186.253,94.715,189.091z
+        M155.115,209.613v135.076h-11.703l-24.176-135.076H155.115z M213.75,369.689h47.057c6.903,0,12.5-5.597,12.5-12.5V197.113
+       c0-6.903-5.597-12.5-12.5-12.5H213.75c-6.903,0-12.5,5.597-12.5,12.5v160.076C201.25,364.094,206.846,369.689,213.75,369.689z
+        M226.25,209.613h22.057v135.076H226.25V209.613L226.25,209.613z M306.942,369.689h34.664c6.054,0,11.238-4.338,12.305-10.298
+       l28.65-160.076c0.65-3.643-0.345-7.387-2.72-10.225s-5.886-4.478-9.586-4.478h-63.313c-6.903,0-12.5,5.597-12.5,12.5v160.076
+       C294.442,364.094,300.039,369.689,306.942,369.689z M319.442,209.613h35.879l-24.176,135.076h-11.703V209.613z M5.848,120.881
+       l16.034,10.077c-0.342,1.139-0.525,2.347-0.525,3.598v60.988c0,6.903,5.597,12.5,12.5,12.5H46.69l35.345,197.482
+       c1.066,5.959,6.251,10.298,12.305,10.298h285.878c6.054,0,11.237-4.338,12.305-10.298l35.345-197.482h12.833
+       c6.903,0,12.5-5.597,12.5-12.5v-60.988c0-1.25-0.184-2.458-0.524-3.598l16.033-10.077c2.808-1.764,4.799-4.571,5.535-7.803
+       c0.737-3.232,0.161-6.625-1.603-9.432l-24.55-39.062c-3.673-5.846-11.391-7.605-17.234-3.932l-97.704,61.403h-191.75L43.7,60.653
+       c-5.843-3.673-13.561-1.914-17.234,3.932l-24.55,39.062c-1.764,2.807-2.34,6.2-1.603,9.432
+       C1.05,116.311,3.042,119.117,5.848,120.881z M433.576,88.471l11.246,17.895l-24.966,15.69h-39.72L433.576,88.471z M336.754,147.055
+       h86.703h4.742v35.988h-10.794c-6.054,0-11.238,4.338-12.305,10.298l-35.346,197.482H104.8L69.457,193.342
+       c-1.066-5.959-6.251-10.298-12.305-10.298H46.357v-35.988h4.742h86.703L336.754,147.055L336.754,147.055z M40.981,88.471
+       l53.439,33.584H54.7l-24.966-15.69L40.981,88.471z"/>
+</g>
+</svg>
+</div>
+
+
+
+</body>
+
+
+
+
+
+  <script>
+        var gira = document.getElementById('carta');
+
+        function apertar() {
+            gira.classList.toggle('gir');
+        }
+
+
+
+
+
+        window.addEventListener("load", function() {
+  const loader = document.querySelector(".tu");
+  const conteudo = document.querySelector(".conteudo");
+
+  // Simula um atraso de 2 segundos antes de exibir o conteúdo
+  setTimeout(function() {
+    conteudo.style.display = "none"; // Exibe o conteúdo
+    loader.style.display = "none"; // Oculta o elemento de carregamento
+    conteudo.style.display = "block"; // Exibe o conteúdo
+  }, 3000);
+});
+
+
+
+
+    </script>
+</html>
