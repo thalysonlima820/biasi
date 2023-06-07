@@ -145,6 +145,8 @@ switch(diahoje){
             bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Sabado`
         }
 
+        
+
         break
     case 6:
         if(hora >= 1 && hora<6){
