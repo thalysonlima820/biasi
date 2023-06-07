@@ -61,7 +61,11 @@
         }
 
         .lado2 {
-            background-color: #10213D;
+            background: linear-gradient(
+    3600deg,
+    rgb(218, 9, 9) -50%,
+    rgb(0, 0, 0) 60%
+  );
             position: absolute;
             width: 50%;
             height: 100%;
@@ -85,7 +89,7 @@
         }
 
         .ca {
-            background-color: #040e1e;
+            background-color: #7F1B1B;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             padding: 5px;
@@ -94,7 +98,7 @@
 
         .ca1 {
             margin-right: 0;
-            background: #f6383b;
+            background: #DE0000;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             padding: 5px;
@@ -103,11 +107,11 @@
         }
         .ca:hover{
             box-shadow: 6px 6px 6px black;
-            background-color: #f6383b;
+            background: #DE0000;
             cursor: pointer;
         }
         .ca:hover + .ca1{
-            background-color: #040e1e;
+            background-color: #7F1B1B;
             cursor: pointer;
         }
 
@@ -119,7 +123,7 @@
         }
 
         .lado12 {
-            background-color: #f6383b;
+            background: #DE0000;
             position: absolute;
             width: 50%;
             height: 100%;
@@ -128,7 +132,11 @@
         }
 
         .lado22 {
-            background-color: #10213D;
+            background: linear-gradient(
+    3600deg,
+    rgb(218, 9, 9) -50%,
+    rgb(0, 0, 0) 60%
+  );
             position: absolute;
             width: 50%;
             height: 100%;
@@ -158,7 +166,7 @@
         }
 
         .inputsubmit {
-            background: #ce2225;
+            background: #DE0000;
             border: none;
             padding: 10px;
             width: 50%;
@@ -173,7 +181,7 @@
         }
 
         .cv {
-            background-color: #f6383b;
+            background: #DE0000;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             padding: 5px;
@@ -182,7 +190,7 @@
 
 
         .cv2 {
-            background-color: #0d1a2e;
+            background: #a91517;
             margin-right: 0;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -204,10 +212,10 @@
         }
         .cv2:hover {
             box-shadow: 6px 6px 6px black;
-            background-color: #f6383b;
+            background: #DE0000;
         }
         .cv2:hover + .cv{
-            background-color: #040e1e;
+            background: #a91517;
         }
 
 
@@ -243,7 +251,7 @@
         }
 
         #submit{
-            background: #ce2225;
+            background: #DE0000;
             margin-left: 40%;
             border: none;
             padding: 10px;
@@ -253,7 +261,7 @@
             border-radius: 10px;
         }
         #submit:hover{
-            background: #8c1315;
+            background-color: #7F1B1B;
         }
         .titulo{
             margin-left: 10px;
@@ -261,26 +269,7 @@
         }
 
 
-        img{
-            width: 100px;
-            height: 200px;
-            margin-top: -5%;
-        }
-        .img2{
-            margin-left: -20px;
-        }
-        .img1{
-            margin-left: 10px;
-        }
-        .img3{
-            margin-left: -20px;
-        }
-
-        .biasi{
-            font-size: 3.5em;
-            margin-left: 24%;
-            margin-top: 30%;
-        }
+        
 
 
         .car{
@@ -312,11 +301,17 @@
         }
 
 
-        h1{
-            color: aliceblue;
-        }
+     
         .conteudo{
             display: none;
+        }
+
+        img{
+            width: 325px;
+            height: 380px;
+            top: 18px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
         }
 
 
@@ -331,13 +326,9 @@
                 <div class="lado1">
                     
 
-                    <h1 class="biasi">BIASI</h1>
 
 
-
-                    <img class="img1" src="bi/abobrinha.png" alt="">
-                    <img class="img2"  src="bi/banana.png" alt="">
-                    <img class="img3"  src="bi/maracuja.png" alt="">
+                    <img src="bi/WhatsApp Image 2023-06-06 at 10.54.01 PM.jpeg" alt="">
 
 
 
@@ -485,7 +476,7 @@
     loader.style.display = "none"; // Oculta o elemento de carregamento
     car.style.zIndex = "-999";
     conteudo.style.display = "block"; // Exibe o conteúdo
-  }, 3000);
+  }, 1000);
 });
 
 
