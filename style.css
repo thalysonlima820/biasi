@@ -22,7 +22,15 @@ html{
 }
 
 header{
-    background-color: #020202;
+    background-image: url(bi/WhatsApp\ Image\ 2023-06-07\ at\ 1.49.41\ PM.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+  
+
+
+
     padding: 40px;
     display: flex;
     align-items: center;
@@ -463,3 +471,17 @@ header .navegcao-primaria li a:hover:after{
     margin-left: -80%;
 }
 
+
+
+.suporte img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.suporte{
+    position: fixed;
+    z-index: 999;
+    right: 3%;
+    bottom: 8%;
+}
