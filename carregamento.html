@@ -27,15 +27,21 @@
             stroke-width: 4px;
             stroke-dasharray: 2266;
             stroke-dashoffset: 0;
-            animation: acao 7s infinite;
+            animation: acao 5s infinite;
             
             
         }
         @keyframes acao {
-            from{
+            0%{
                 stroke-dashoffset: 2266;
             }
-            to{
+            40%{
+                stroke-dashoffset: 0;
+            }
+            50%{
+                stroke-dashoffset: 2266;
+            }
+            100%{
                 stroke-dashoffset: 0;
             }
         }
@@ -47,13 +53,6 @@
         .conteudo{
             display: none;
             
-        }
-
-
-        @keyframes a {
-            top{
-                margin: 500%;
-            }
         }
 
 
@@ -87,24 +86,25 @@
 </div>
 
 <div class="conteudo">
-    <h1 >frgerg</h1>
+    <h1 >frgernvng</h1>
 </div>
 
 </body>
 <script>
-window.addEventListener("load", function() {
-  const loader = document.querySelector(".tu");
-  const conteudo = document.querySelector(".conteudo");
-  const car = document.querySelector(".car");
 
-  // Simula um atraso de 2 segundos antes de exibir o conteúdo
-  setTimeout(function() {
-   
-    //loader.style.display = "none"; 
-    car.style.zIndex = "-999";
-    conteudo.style.display = "block"; // Exibe o conteúdo
-  }, 1000);
-});
+window.addEventListener("load", function(){
+const load = document.querySelector(".tu");
+const car = document.querySelector(".car");
+const conteudo = document.querySelector(".conteudo");
+
+    setTimeout( function(){
+        load.style.display = ("none");
+        car.style.zIndex = "-999";
+        conteudo.style.display = ("block")
+    }, 5000);
+
+
+})
 
 
 

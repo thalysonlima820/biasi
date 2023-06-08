@@ -20,28 +20,67 @@ html{
 #oi{
     display: none;
 }
+.perfil{
+    position: relative;
+    display: flex;
+}
+
+ .perfil .foto-perfil img{
+    position: absolute;
+    margin-top: 0;
+    width: 125%;
+    height: 120%;
+    padding: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+
+}
+.foto-perfil{
+    position: relative;
+    border: 3px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+.informacao{
+    position: absolute;
+    display: block;
+    margin: 20% 120%;
+}
+.informacao p{
+    margin-bottom: 20%;
+    font-size: 1.5em;
+}
+.informacao button{
+    border: none;
+    padding: 2px 10px;
+    background: #DE0000;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.informacao button:hover{
+    background-color: #7F1B1B;
+}
+
+
+
 
 header{
-    background-image: url(bi/WhatsApp\ Image\ 2023-06-07\ at\ 1.49.41\ PM.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    
-  
-
-
-
     padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 header h1{
-    color: #fff;
+    color: #F3FF05;
     font-size: 2.5em;
+    margin-left: 100px;
 }
 header span{
-    color: #dc3545;
+    color: #DE0000;;
 }
 
 header .navegcao-primaria{
@@ -56,6 +95,7 @@ header .navegcao-primaria li a{
     height: 0;
     color: #fff;
     font-size: 1.3em;
+    text-shadow: 10px 7px 4px black;
 }
 header .navegcao-primaria li a::after{
     content: '';
@@ -400,7 +440,7 @@ header .navegcao-primaria li a:hover:after{
 .foto{
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .cotente{
@@ -484,4 +524,22 @@ header .navegcao-primaria li a:hover:after{
     z-index: 999;
     right: 3%;
     bottom: 8%;
+}
+
+
+
+
+.bod{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -999;
+    top: -10px;
+    width: 100%;
+    height: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+   filter: blur(5px);
+   box-shadow: 10px 10px 10px black;
 }
