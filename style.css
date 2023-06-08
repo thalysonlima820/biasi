@@ -435,6 +435,31 @@ header .navegcao-primaria li a:hover:after{
         width: 50px;
         height: 17px;
 }
+
+.perfil{
+    margin-left: -90px;
+}
+.bod{
+    width: 190%;
+    left: 0px;
+}
+header h1{
+    margin-left: 200px;
+    font-size: 1em;
+}
+
+
+.suporte{
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    left: 5px;
+    bottom: 8%;
+}
+
+
+
+
 }
 
 .foto{
