@@ -181,3 +181,30 @@ function nextimg(){
 
     document.getElementById('slide'+count).checked = true;
 }
+
+
+
+
+
+
+
+// foto de perfil
+
+function perfil(){
+    const ft = document.querySelector('.ftperfil')
+    ft.style.display = "block";
+
+}
+
+
+function fechar(){
+    const ft = document.querySelector('.ftperfil')
+    ft.style.display = "none";
+}
+
+
+
+function selecionarFoto(foto) {
+    var fotoSelecionada = document.getElementById('fotoSelecionada');
+    fotoSelecionada.src = foto;
+  }

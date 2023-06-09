@@ -1,0 +1,381 @@
+#cont {
+    margin-left: 20%;
+    margin-top: 10%;
+    position: relative;
+    width: 650px;
+    height: 380px;
+    perspective: 900px;
+    left: 20px;
+    top: 50px;
+}
+
+#carta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 2s ease;
+    
+}
+
+#frent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#tras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.login {
+    position: relative;
+    width: 650px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.lado1 {
+    background-color: #f6383b;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.lado2 {
+    background: linear-gradient(
+    3600deg,
+    rgb(218, 9, 9) -50%,
+    rgb(0, 0, 0) 60%
+);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cada {
+    display: flex;
+    margin: 5px;
+    margin-left: 160px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.cada a {
+    text-decoration: none;
+    margin: 0 8px;
+    color: white;
+}
+
+.ca {
+    background-color: #7F1B1B;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ca1 {
+    margin-right: 0;
+    background: #DE0000;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    cursor: pointer;
+   
+}
+.ca:hover{
+    box-shadow: 6px 6px 6px black;
+    background: #DE0000;
+    cursor: pointer;
+}
+.ca:hover + .ca1{
+    background-color: #7F1B1B;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.lado12 {
+    background: #DE0000;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.lado22 {
+    background: linear-gradient(
+3600deg,
+rgb(218, 9, 9) -50%,
+rgb(0, 0, 0) 60%
+);
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+}
+
+.tela {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+input {
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.inputsubmit {
+    background: #DE0000;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.inputsubmit:hover {
+    background: #a91517;
+}
+
+.cv {
+    background: #DE0000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
+    z-index: 4;
+}
+
+
+.cv2 {
+    background: #a91517;
+    margin-right: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.gir {
+    transform: rotateY(180deg);
+}
+
+
+#btnCadastro {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.cv2:hover {
+    box-shadow: 6px 6px 6px black;
+    background: #DE0000;
+}
+.cv2:hover + .cv{
+    background: #a91517;
+}
+
+
+
+
+
+
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: 15%;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+    margin-left: 15%;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#submit{
+    background: #DE0000;
+    margin-left: 40%;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-color: #7F1B1B;
+}
+.titulo{
+    margin-left: 10px;
+    color: white;
+}
+
+
+
+
+
+.car{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.tu{
+    z-index: -10;       
+    width: 40%;
+    height: 40%;
+    fill: transparent;
+    stroke: red;
+    stroke-width: 4px;
+    stroke-dasharray: 2266;
+    stroke-dashoffset: 0;
+    animation: acao 7s infinite;
+}
+@keyframes acao {
+    from{
+        stroke-dashoffset: 2266;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+.conteudo{
+    display: none;
+}
+
+.bo{
+    width: 325px;
+    height: 380px;
+    top: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+}
+.bod{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -999;
+    top: -10px;
+    width: 99%;
+    height: 100vh;
+    background-size: cover;
+   background-repeat: no-repeat;
+   filter: blur(5px);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+   
+    body{
+        font-size: 10px;
+    }
+    #cont {
+    margin: 0 ;
+    width: 350px;
+    height: 300px;
+    }
+
+
+    .login {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    border-radius: 15px;
+    }
+
+    .bo{
+        width: 175px;
+        height: 300px;
+    }
+
+
+
+
+
+   
+   
+.inputUser{           
+    font-size: 7px; 
+}
+.labelInput{
+   font-size: 7px;
+}
+
+#submit{
+    font-size: 7px;
+}
+.inputBox{
+    top: -5px;
+}
+
+.cada{
+    margin: 10px 40px;
+}
+
+.tela input{
+    width: 100px;
+    font-size: 8px;
+}
+
+
+}

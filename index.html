@@ -14,6 +14,7 @@
 
 </head>
 <body>
+    <img class="fundo" src="img/imagem_2.jpeg" alt="">
     
     <div class="suporte">
         <a href="https://wa.me/message/NY7TBVEFFNW2O1"><img src="https://logospng.org/download/whatsapp/logo-whatsapp-4096.png" alt=""></a>
@@ -25,17 +26,24 @@
 
 
         <div class="perfil">
-            <div class="foto-perfil">
-                <img src="Mascotes em jpg/maça.jpg" alt="">
+            <div class="foto-perfil" onclick="perfil()">
+                <img id="fotoSelecionada" src="Mascotes em jpg/maça.jpg" alt="">
             </div>
             <div class="informacao">
                <p>nome</p>
                 <div >
                 <button>Sair</button>
                 </div>
-            </div>
-         
+            </div>  
         </div>
+
+
+
+
+
+
+
+
 
 
 
@@ -57,6 +65,36 @@
     </header>
 
     <section class="pagina_1">
+
+
+
+
+        <div class="ftperfil">
+            <h1>Escolha sua foto de perfil</h1>
+            <button onclick="fechar()">Fechar</button>
+            <div id="photoContainer">
+                <img src="Mascotes em jpg/abobrinha.jpg" onclick="selecionarFoto('Mascotes em jpg/abobrinha.jpg')">   
+                <img src="Mascotes em jpg/banana.jpg" onclick="selecionarFoto('Mascotes em jpg/banana.jpg')">   
+                <img src="Mascotes em jpg/batata.jpg" onclick="selecionarFoto('Mascotes em jpg/batata.jpg')">   
+                <img src="Mascotes em jpg/beringela.jpg" onclick="selecionarFoto('Mascotes em jpg/beringela.jpg')">   
+                <img src="Mascotes em jpg/caju.jpg" onclick="selecionarFoto('Mascotes em jpg/caju.jpg')">   
+                <img src="Mascotes em jpg/conde.jpg" onclick="selecionarFoto('Mascotes em jpg/conde.jpg')">   
+                <img src="Mascotes em jpg/maracuja.jpg" onclick="selecionarFoto('Mascotes em jpg/maracuja.jpg')">   
+                <img src="Mascotes em jpg/maça.jpg" onclick="selecionarFoto('Mascotes em jpg/maça.jpg')">   
+                <img src="Mascotes em jpg/milho.jpg" onclick="selecionarFoto('Mascotes em jpg/milho.jpg')">   
+                <img src="Mascotes em jpg/pera.jpg" onclick="selecionarFoto('Mascotes em jpg/pera.jpg')">   
+                <img src="Mascotes em jpg/tangerina.jpg" onclick="selecionarFoto('Mascotes em jpg/tangerina.jpg')">   
+              </div>
+
+
+
+        </div>
+
+
+
+
+
+
         <div class="pai_bv">
         <div class="bem_vindo gg">
             <ul>

@@ -20,7 +20,7 @@
  
 
 body{
-   background-image: url(img/imagem_1.jpeg);
+   background-image: url(img/imagem_2.jpeg);
     /* max-width: 1200px;
     margin: 0 auto; */
     color: #fff;
@@ -582,7 +582,7 @@ header .navegcao-primaria li a:hover:after{
 }
 
 .perfil{
-    margin-left: -90px;
+ margin-left: 40px;
 }
 .bod{
     width: 150%;
@@ -610,8 +610,8 @@ header{
 
 #oi{    
     position: relative;
-    left: -140px;
-    top: 30px;
+    left: 80px;
+    top: 70px;
     display: block;
     margin: 0;
     padding: 0;
@@ -633,7 +633,15 @@ margin: 10% 120%;
 font-size: 10px;
 }
 
-
+#home{
+    margin-top: 90px;
+}
+.fundo{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 
 
 
@@ -744,4 +752,65 @@ font-size: 10px;
     background-repeat: no-repeat;
     
 
+}
+.fundo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: -999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+    width: 100%;
+    height: 140vh;
+
+}
+
+
+
+
+
+
+.ftperfil{
+    margin-top: -50px;
+    margin-left: 200px;
+    position: absolute;
+    z-index: 999;
+    width: 680px;
+    height: 590px;
+    background-color: #222;
+    display: none;
+    border-radius: 20px;
+}
+
+
+#photoContainer img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#photoContainer{
+    padding: 30px;
+}
+
+
+.ftperfil h1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.ftperfil button{
+    background-color: #DE0000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 2px 4px 5px black;
+    margin-left: 10px;
+}
+.ftperfil button:hover{
+    background-color: #7F1B1B;
+    box-shadow: 1px 1px 1px transparent;
 }

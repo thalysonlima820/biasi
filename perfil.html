@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Escolha de Foto de Perfil</title>
+ <style>
+    #photoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#photoContainer img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#fotoSelecionada {
+  text-align: center;
+}
+
+#fotoSelecionada img {
+  width: 200px;
+  height: 200px;
+}
+
+ </style>
+</head>
+<body>
+  <h1>Escolha sua foto de perfil</h1>
+
+  <div id="photoContainer">
+    <img src="mascote/abobrinha.png" onclick="selecionarFoto('mascote/abobrinha.png')">
+    <img src="mascote/banana.png" onclick="selecionarFoto('mascote/banana.png')">
+    <img src="mascote/batata.png" onclick="selecionarFoto('mascote/batata.png')">
+    <img src="mascote/beringela.png" onclick="selecionarFoto('mascote/beringela.png')">
+    <img src="mascote/caju.png" onclick="selecionarFoto('mascote/caju.png')">
+    <img src="mascote/conde.png" onclick="selecionarFoto('mascote/conde.png')">
+  </div>
+
+  <h2>Foto selecionada:</h2>
+  <div id="fotoSelecionada"></div>
+
+  
+</body>
+<script>
+    function selecionarFoto(foto) {
+      var fotoSelecionada = document.getElementById('fotoSelecionada');
+      fotoSelecionada.innerHTML = '<img src="' + foto + '">';
+    }
+</script>
+</html>
+
