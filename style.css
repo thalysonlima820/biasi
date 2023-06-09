@@ -20,7 +20,7 @@
  
 
 body{
-   background-image: url(img/imagem_2.jpeg);
+
     /* max-width: 1200px;
     margin: 0 auto; */
     color: #fff;
@@ -229,8 +229,66 @@ header .navegcao-primaria{
     display: flex;
     gap: 30px;
     align-items: center;
-    padding-top: 110px;
+    padding-top: 18%;
 }
+
+@media (min-width: 90px) and (max-width: 1210px) {
+    header .navegcao-primaria{
+        margin-top: -50px;
+    }
+    .perfil{ 
+        top: -38px;
+        left: -70px;
+    }
+}
+
+@media (min-width: 90px) and (max-width: 1410px) {
+    header .navegcao-primaria{
+        padding-top: 14%;
+    }
+}
+
+
+
+@media (min-width: 1592px){
+    header .navegcao-primaria{
+        padding-top: 26%;
+    }
+    .perfil{ 
+        top: 30px;
+        left: -130px;
+    }
+    
+}
+
+@media (min-width: 1892px){
+    header .navegcao-primaria{
+        padding-top: 28%;
+    }
+    header .navegcao-primaria li a{
+        font-size: 1.5em;
+        
+    }
+    
+}
+
+@media (min-width: 2092px){
+    header .navegcao-primaria{
+        padding-top: 35%;
+    }
+    header .navegcao-primaria li a{
+        font-size: 2.5em;
+        
+    }
+
+}
+
+
+
+
+
+
+
 
 header .navegcao-primaria li a{
     width: 0;
@@ -582,7 +640,8 @@ header .navegcao-primaria li a:hover:after{
 }
 
 .perfil{
- margin-left: 40px;
+    margin-top: 80px;
+ margin-left: 0px;
 }
 .bod{
     width: 150%;
@@ -610,11 +669,12 @@ header{
 
 #oi{    
     position: relative;
-    left: 80px;
-    top: 70px;
+    left: 120px;
+    top: 30px;
     display: block;
     margin: 0;
     padding: 0;
+    color: #020202;
 }
 
 .foto-perfil{

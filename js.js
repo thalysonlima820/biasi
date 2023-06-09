@@ -206,5 +206,7 @@ function fechar(){
 
 function selecionarFoto(foto) {
     var fotoSelecionada = document.getElementById('fotoSelecionada');
+    const ft = document.querySelector('.ftperfil')
     fotoSelecionada.src = foto;
+    ft.style.display = "none";
   }
