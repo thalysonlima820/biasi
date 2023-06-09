@@ -6,6 +6,10 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+   
+  
+ 
+
 body{
     background-color: #222;
     /* max-width: 1200px;
@@ -17,12 +21,136 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+
+
+@font-face {
+    font-family: "Monumente";
+    src: url(caminho/para/o/arquivo-da-fonte.ttf);
+  }
+  
+  
+  .fundo-cupom{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -5;
+      border-radius: 30px;
+  }
+  
+  .cupom1{
+      border: 3px solid white;
+      width: 500px;
+      height: 270px;
+      position: relative;
+      border-radius: 30px;
+      margin-top: 200px;
+      margin-left: 100px;
+  
+  }
+  .cupom1 h3{
+      font-family: "Monumente", sans-serif;
+      font-size: 1em;
+     text-align: center;
+  
+     
+  }
+
+  .cup1{
+    position: absolute;
+      margin-top: 15px;
+      margin-left: 110px;
+     color:#F3FF05;
+  }
+  .cup2{
+    position: absolute;
+      margin-top: 45px;
+      margin-left: 110px;
+      color: transparent;
+      -webkit-text-stroke: 2px black;
+      -webkit-text-fill-color: transparent;
+  }
+  .cup3{
+    position: absolute;
+      margin-top: 80px;
+      margin-left: 110px;
+      color: transparent;
+      -webkit-text-stroke: 2px #F3FF05; 
+      -webkit-text-fill-color: transparent;
+  }
+  .cup{
+    position: absolute;
+      font-size: 18px;
+      text-align: center;
+      max-width: 300px;
+      color: white;
+      margin: 130px 100px;
+  }
+  
+  
+  .cup::before{
+      content: '';
+      display: block;
+      margin: auto;
+      width: 50%;
+      height: 2px;
+      background-color: black;
+  }
+  .cup::after{
+      content: '';
+      display: block;
+      margin: 10px auto ;
+      width: 30%;
+      height: 2px;
+      background-color: black;
+  }
+  .input-cupom{
+      position: absolute;
+      bottom: 8%;
+      left: 20%;
+      background-color: #F3FF05;
+      border-radius: 20px;
+      padding: 10px 60px;
+      border: 3px solid black;
+  }
+  .btncum{
+      position: absolute;
+      bottom: 9%;
+      right: 5%;
+      padding: 8PX 15PX;
+      border-radius: 15PX;
+      background: #F3FF05;
+      border: 2px solid black;
+      cursor: pointer;
+  }
+  .cupom1 p{
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .btncum:hover{
+      background-color: #DE0000;
+  }
+  .img-cupom{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      bottom: 4%;
+      left: 2.8%;
+  }
+
+
+
+
+
+
+
 #oi{
     display: none;
 }
 .perfil{
     position: relative;
     display: flex;
+    top: 30px;
 }
 
  .perfil .foto-perfil img{
@@ -41,8 +169,8 @@ html{
     border: 3px solid black;
     border-radius: 50%;
     overflow: hidden;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .informacao{
     position: absolute;
@@ -51,7 +179,9 @@ html{
 }
 .informacao p{
     margin-bottom: 20%;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #020202;
 }
 .informacao button{
     border: none;
@@ -75,27 +205,30 @@ header{
     justify-content: space-around;
 }
 header h1{
+    margin-top: -80px;
     color: #F3FF05;
     font-size: 2.5em;
     margin-left: 100px;
+    
 }
 header span{
-    color: #DE0000;;
+    color: #DE0000;
 }
 
 header .navegcao-primaria{
     display: flex;
     gap: 30px;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 header .navegcao-primaria li a{
     width: 0;
     height: 0;
-    color: #fff;
+    font-weight: bold;
+    color: black;
     font-size: 1.3em;
-    text-shadow: 10px 7px 4px black;
+    
 }
 header .navegcao-primaria li a::after{
     content: '';
@@ -121,10 +254,7 @@ header .navegcao-primaria li a:hover:after{
         position: relative;
         left: -99px;
     }
-    .cupomm .btncum{
-        left: 150px;
- 
-    }
+
     .gg ul li{
         margin: 0;
         padding: 0;
@@ -136,24 +266,24 @@ header .navegcao-primaria li a:hover:after{
         padding: 30px 100px;
         
     }
-    .cupom {
+    .cupom1 {
         position: absolute;
         width: 20px;
         
     }
-    .cupomm .cupom{
+    .cupomm1 .cupom1{
         width: 300px;
-        height: 100px;
+        height: 180px;
         margin-top: 100px;
         margin-left: 0;
     }
-    .cupomm .cupom h3{
+    .cupomm1 .cupom1 h3{
         font-size: 20px;
     }
-    .cupomm .cupom p{
+    .cupomm1 .cupom1 p{
         font-size: 10px;
     }
-    .cupomm .cupom input{
+    .cupomm1 .cupom1 input{
         font-size: 10px;
      }
     
@@ -161,6 +291,47 @@ header .navegcao-primaria li a:hover:after{
         display: none;
     }
 
+
+    .cup1{
+     
+          margin-top: 10px;
+          margin-left: 65px;
+        
+      }
+      .cup2{
+      
+          margin-top: 35px;
+          margin-left: 65px;
+        
+      }
+      .cup3{
+          margin-top: 58px;
+          margin-left: 65px; 
+      }
+      .cup{
+          max-width: 300px;
+          margin: 90px 70px;
+      }
+
+      .input-cupom{     
+        bottom: 8%;
+        left: 25%;
+        border-radius: 20px;
+        padding: 5px 10px;
+ 
+    }
+    .btncum{
+        bottom: 9%;
+        right: 5%;
+        padding: 5px 10px;
+        border-radius: 15PX;
+    }
+
+
+    .img-cupom{
+        width: 50px;
+        height: 50px;
+    }
 
 
 
@@ -390,43 +561,6 @@ header .navegcao-primaria li a:hover:after{
 
 
 
-.cupom{
-    border: 3px solid white;
-    width: 500px;
-    height: 130px;
-    position: relative;
-    border-radius: 5px;
-    margin-top: 200px;
-    margin-left: 100px;
-}
-.cupom h3{
-    margin-top: 14px;
-   font-size: 30px;
-   color: #dc3545;
-   text-align: center;
-}
-.cupom p{
-    font-size: 15px;
-    text-align: center;
-}
-.cupom input{
-   font-size: 20px;
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 20px;
-}
-.btncum{
-    left: 280px;
-    border: 2px solid #dc3545;
-    border-radius: 5px;
-    padding: 2px 5px;
-    background-color: #dc3545;
-    color: white;
-    cursor: pointer;
-}
-.btncum:hover{
-    background-color: #ff5d56;
-}
 
 
 @media (max-width: 992px){
@@ -603,6 +737,6 @@ padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
     
-   filter: blur(5px);
+   filter: blur(1px);
    box-shadow: 10px 10px 10px black;
 }

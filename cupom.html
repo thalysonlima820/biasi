@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+
+
+
+        @font-face {
+  font-family: "Monumente";
+  src: url(caminho/para/o/arquivo-da-fonte.ttf);
+}
+
+
+.fundo-cupom{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    border-radius: 30px;
+}
+
+.cupom1{
+    border: 3px solid white;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+.cupom1 h3{
+    font-family: "Monumente", sans-serif;
+    font-size: 3em;
+   text-align: center;
+
+   
+}
+.cup3 h3{
+    max-height: -100px;
+}
+.cup1{
+ 
+    margin-top: 15px;
+   color:#F3FF05;
+}
+.cup2{
+    margin-top: -60px;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-fill-color: transparent;
+}
+.cup3{
+    margin-top: -60px;
+    color: transparent;
+    -webkit-text-stroke: 2px #F3FF05; 
+    -webkit-text-fill-color: transparent;
+}
+.cup{
+    font-size: 1em;
+    text-align: center;
+    max-width: 250px;
+    color: white;
+    margin: -40px auto;
+}
+
+
+.cup::before{
+    content: '';
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+.cup::after{
+    content: '';
+    display: block;
+    margin: 10px auto ;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+}
+.input-cupom{
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    background-color: #F3FF05;
+    border-radius: 20px;
+    padding: 10px 60px;
+    border: 3px solid black;
+}
+.btncum{
+    position: absolute;
+    bottom: 9%;
+    right: 5%;
+    padding: 8PX 15PX;
+    border-radius: 15PX;
+    background: #F3FF05;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.cupom1 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btncum:hover{
+    background-color: #DE0000;
+}
+.img-cupom{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    bottom: 4%;
+    left: 2.8%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <section class="cupomm1">
+       
+        <div class="cupom1">
+            <img class="fundo-cupom" src="bi/WhatsApp Image 2023-06-08 at 9.35.43 PM.jpeg" alt="">
+            <h3 class="cup1">CÓDIGO CUPOM</h3>
+            <h3 class="cup2">CÓDIGO CUPOM</h3>
+            <h3 class="cup3">CÓDIGO CUPOM</h3>
+            <p class="cup"> Digite aqui e concorra a descontos
+                nas próximas compras</p>
+                <img class="img-cupom" src="mascote/maracuja.png" alt="">
+            <input class="input-cupom" type="number"> 
+            <input class="btncum" type="button" value="Enviar">
+        </div>
+    </section>
+</body>
+</html>
