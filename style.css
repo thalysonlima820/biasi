@@ -30,7 +30,15 @@ html{
     scroll-behavior: smooth;
 }
 
-
+nav{
+    position: absolute;
+    z-index: 85;
+    background-image: url(bi/biasi.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -45,10 +53,11 @@ html{
       height: 100%;
       width: 100%;
       z-index: -5;
-      border-radius: 30px;
+
   }
   
   .cupom1{
+    overflow: hidden;
       border: 3px solid white;
       width: 500px;
       height: 270px;
@@ -159,8 +168,9 @@ html{
 .perfil{
     position: relative;
     display: flex;
-    top: -10px;
-    left: -130px;
+    margin-left: -80%;
+    z-index: 999;
+
 }
 
  .perfil .foto-perfil img{
@@ -179,8 +189,8 @@ html{
     border: 5px solid #F3FF05;
     border-radius: 50%;
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 .informacao{
     position: absolute;
@@ -189,12 +199,13 @@ html{
 }
 .informacao p{
     margin-bottom: 20%;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     color: #F3FF05;
 }
 .informacao button{
     border: none;
+    font-size: 2em;
     padding: 2px 10px;
     background: white;
     cursor: pointer;
@@ -232,60 +243,64 @@ header .navegcao-primaria{
     padding-top: 18%;
 }
 
-@media (min-width: 90px) and (max-width: 1210px) {
-    header .navegcao-primaria{
-        margin-top: -50px;
-    }
-    .perfil{ 
-        top: -38px;
-        left: -70px;
-    }
-}
-
-@media (min-width: 90px) and (max-width: 1410px) {
-    header .navegcao-primaria{
-        padding-top: 14%;
-    }
-}
 
 
-
-@media (min-width: 1592px){
-    header .navegcao-primaria{
-        padding-top: 26%;
-    }
-    .perfil{ 
-        top: 30px;
-        left: -130px;
-    }
+ @media (min-width: 0px) and (max-width: 1494px) {
     
-}
-
-@media (min-width: 1892px){
-    header .navegcao-primaria{
-        padding-top: 28%;
+    .perfil{
+        margin-top: 40px;
     }
-    header .navegcao-primaria li a{
-        font-size: 1.5em;
-        
+    .foto-perfil{
+        width: 180px;
+        height: 180px;
     }
-    
-}
-
-@media (min-width: 2092px){
-    header .navegcao-primaria{
-        padding-top: 35%;
-    }
-    header .navegcao-primaria li a{
+    .informacao p{
+        margin-bottom: 20%;
         font-size: 2.5em;
-        
     }
-
+    .informacao button{
+        font-size: 1.5em;
+        padding: 2px 10px;
+        border-radius: 10%;
+    }
 }
 
 
 
 
+@media (min-width: 0px) and (max-width: 1425px) {
+    nav{
+        margin-top: -50px;
+    } 
+    .perfil{
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 1140px) {
+    .foto-perfil{
+        width: 140px;
+        height: 140px;
+        margin-left: -50px;
+    }
+    .informacao p{
+        font-size: 2em;
+    }
+    .informacao button{
+        font-size: 1em;
+    }
+    header .navegcao-primaria li a{    
+    font-size: 15px;
+    }
+}
+
+
+
+nav ul{
+    justify-content: end;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
 
 
 
@@ -295,8 +310,8 @@ header .navegcao-primaria li a{
     height: 0;
     font-weight: bold;
     color: #DE0000;
-    font-size: 1.3em;
-    
+    font-size: 1.5em;
+    z-index: 999;
 }
 header .navegcao-primaria li a::after{
     content: '';
@@ -317,9 +332,6 @@ header .navegcao-primaria li a:hover:after{
 
 
 @media (max-width: 992px){
-
-
-
     .gg ul li{
         margin: 0;
         padding: 0;
@@ -659,12 +671,6 @@ header{
     
     justify-content: left;
 }
-
-
-
-
-
-
 
 
 .suporte{
