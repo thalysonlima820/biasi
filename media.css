@@ -270,11 +270,7 @@ margin-left: -30px;
         font-size: 15px;
     }
 
-    header{
-        justify-content: space-between;
-        padding: 30px 100px;
-        
-    }
+
     .cupom1{
         position: absolute;
         width: 20px;
@@ -295,9 +291,18 @@ margin-left: -30px;
         font-size: 10px;
      }
     
-    .pagina_1 .pula{
-        display: none;
+
+     .fundo{
+        height: 150%;
+     }
+
+
+ 
+     .pula{
+        margin-top: -50px;
+        margin-left: 50px;
     }
+   
 
 
     .cup1{
@@ -341,8 +346,21 @@ margin-left: -30px;
         height: 50px;
     }
 
+    header h1{
+        margin-left: 190px;
+        font-size: 1.5em;
+        margin-right: 0;
+        padding-right: 0;
+    }
 
-
+    header{
+        background-image: url(bi/biasi.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 100px;
+        justify-content: left;
+    }
 
     header .navegcao-primaria{
         display: none;
@@ -366,16 +384,17 @@ margin-left: -30px;
         animation: sob .8s ease-in-out forwards;
     }
 
+    .foto .cotente{
+        height: 550px;
+        width: 650px;
+    }
+
 }
 
 
 
 @media (max-width: 992px){
-    .foto .cotente{
-         height: 320px;
-         width: 345px;
-       
-     }
+
      .foto .bar{
          width: 50px;
          height: 17px;
@@ -391,16 +410,7 @@ margin-left: -30px;
      padding: 0;
      margin: 0;
  }
- header h1{
-     margin-left: 190px;
-     font-size: 1.5em;
-     margin-right: 0;
-     padding-right: 0;
- }
- header{
-     
-     justify-content: left;
- }
+
  
  
  .suporte{
@@ -410,12 +420,12 @@ margin-left: -30px;
      bottom: 8%;
  }
  
- header{
-     background-image: url(bi/biasi.png);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
+
+ .services{
+    margin-top: -400px;
+    padding: 30px;
+    background-color: #151515;
+}
  
  #oi{    
      position: relative;
@@ -424,6 +434,7 @@ margin-left: -30px;
      margin: 0;
      padding: 0;
      color: #020202;
+     top: 100px;
  }
  
  .foto-perfil{
@@ -472,7 +483,6 @@ margin-left: -30px;
      max-width: 300px;
      font-size: 15px;
      padding: 20px;
-     margin-top: ;
  }
  
 }
@@ -519,4 +529,71 @@ margin-left: -30px;
     }
 
 
+}
+
+@media (max-width: 450px){
+    .pagina_1 .pula{
+        display: none;
+    }
+    header{
+        background-image: url(bi/call\ biasi.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    #oi{    
+        position: relative;
+        left: 80%;
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: #020202;
+        top: 50px;
+    }
+    
+    .foto-perfil{
+        width: 90px;
+        height: 90px;
+        margin-top: -50px;
+    }
+    .perfil .foto-perfil img{
+        width: 130%;
+        height: 130%;
+        }
+        .informacao p{
+            margin-bottom: 20%;
+            font-size: 3em;
+            margin-top: -50px;
+        }
+        .informacao button{
+            font-size: 1.5em;
+            padding: 2px 10px;
+            border-radius: 10%;
+        }
+        .foto .cotente{
+            height: 320px;
+            width: 345px;
+        }
+        .services{
+            margin-top: -150px;
+        }
+}
+
+
+
+
+/* iphone 5 */
+@media (max-width: 320px){
+    .services{
+        margin-top: 100px;
+    }
+}
+
+
+/* iphone mini */
+@media (min-width: 330px) and (max-width: 361px) {
+    .services{
+        margin-top: -100px;
+    }
 }
