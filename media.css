@@ -134,7 +134,9 @@ margin-left: -30px;
         padding: 0;
         font-size: 15px;
     }
-
+    nav p{
+        display: none;
+    }
 
     .cupom1{
         position: absolute;
@@ -401,7 +403,7 @@ margin-left: -30px;
         display: none;
     }
     header{
-        background-image: url(bi/call\ biasi.png);
+        background-image: url(bi/teste.jpeg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -611,3 +613,86 @@ margin-left: -30px;
     }
 
 }
+
+
+@media only screen and (max-width: 928px) and (orientation: landscape) {
+    .services{
+        margin-top: 400px;
+    }
+    .foto-perfil{
+        width: 90px;
+        height: 90px;
+        margin-top: -50px;
+        margin-left: -60px;
+    }
+    .perfil .foto-perfil img{
+        width: 130%;
+        height: 130%;
+        }
+        .informacao p{
+            margin-bottom: 20%;
+            font-size: 3em;
+            margin-top: -50px;
+        }
+        .informacao button{
+            font-size: 1.5em;
+            padding: 2px 10px;
+            border-radius: 10%;
+        }
+        .foto .cotente{
+            height: 320px;
+            width: 345px;
+        }
+        nav p{
+            font-size: 45px;
+        }
+      
+.pula{
+    margin-top: -50px;
+    margin-left: 100px;
+}
+.pula h1{
+    max-width: 300px;
+    font-size: 25px;
+}
+.teste{
+    width: 100px;
+    height: 130px;
+    margin-bottom: -50px;
+}
+
+.teste1{
+margin-left: -30px;
+
+}
+.teste2{
+    margin-bottom: -40px;
+    height: 240px;
+}
+.teste3{
+    margin-left: -40px;
+    height: 150px;
+}
+.teste4{
+   margin-left: 150px;
+   height: 130px;
+   margin-bottom: -30px;
+}
+
+.gg ul li{
+    max-width: 300px;
+    font-size: 25px;
+}
+#oi{    
+    position: relative;
+    left: 80%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #020202;
+    top: 50px;
+}
+.fundo{
+    height: 300%;
+}
+  }
