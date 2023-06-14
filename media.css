@@ -417,33 +417,35 @@ margin-left: -30px;
     
     #oi{    
         position: relative;
-        left: 80%;
+        left: 110%;
         display: block;
         margin: 0;
         padding: 0;
         color: #020202;
-        top: 50px;
+        top: -10px;
     }
     
     .foto-perfil{
         width: 90px;
         height: 90px;
-        margin-top: -50px;
-        margin-left: -60px;
+        margin-top: -90px;
+        margin-left: -80px;
     }
     .perfil .foto-perfil img{
         width: 130%;
         height: 130%;
         }
         .informacao p{
-            margin-bottom: 20%;
+            margin-bottom: 10%;
             font-size: 3em;
-            margin-top: -50px;
+            margin-top: -90px;
+            margin-left: 10px;
         }
         .informacao button{
             font-size: 1.5em;
             padding: 2px 10px;
             border-radius: 10%;
+            margin-left: 10px;
         }
         .foto .cotente{
             height: 320px;

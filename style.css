@@ -833,3 +833,46 @@ footer{
 .fiti{
     color: white;
 }
+
+.missao{
+    margin: 70px 20%;
+}
+
+.foto-misao{
+    width: 150px;
+    height: 120px;
+    transform: rotate(-8deg); 
+    background-color: yellow;
+    position: relative;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+
+}
+.foto-misao::after{
+    content: '';
+    width: 100px;
+    height: 130px; 
+    background-color: yellow;
+    position: absolute;
+    margin-top: -30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius:80px;
+}
+
+.foto-misao::before{
+    content: '';
+    width: 145px;
+    height: 35px; 
+    background-color: yellow;
+    position: absolute;
+    transform: rotate(17deg); 
+    margin-top: -16px;
+    margin-left: 10px;
+    
+    border-top-right-radius: 37px;
+    border-top-left-radius: 40px;
+}
