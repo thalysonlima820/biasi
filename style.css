@@ -5,7 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Mout', sans-serif;
-    color: black;
+
 }
 @font-face {
     font-family: 'Mout';
@@ -728,3 +728,108 @@ transform: rotatez(-10deg);
 }
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Tilt+Neon&display=swap');
+
+:root{
+    --color-neutro-0: #0e0c0c;
+    --color-neutro-10: #171717;
+    --color-neutro-30: #a8a29e;
+    --color-neutro-40: #f5f5f5;
+}
+
+
+footer{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--color-neutro-40);
+}
+
+#footer_content{
+    background-color: var(--color-neutro-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+
+}
+#midia{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+#midia .footer_li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutro-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+#midia .footer_li i{
+    font-size: 1.25rem;
+}
+#midia .footer_li:hover{
+    opacity: 0.8;
+}
+
+#inst{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#face{
+    background: #4267b3;
+}
+#wht{
+    background-color: #25d366;
+}
+
+.footer_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer_list .footer_link{
+    color: var(--color-neutro-30);
+    transition: all 0.4s;
+}
+.footer_list .footer_link:hover{
+    color: #7f37c9;
+}
+
+#footer_sub{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_sub p{
+    color: var(--color-neutro-30);
+}
+
+#input_group{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutro-0);
+    border-radius: 4px;
+}
+
+#footer_copy{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutro-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+.fiti{
+    color: white;
+}
