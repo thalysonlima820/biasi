@@ -210,3 +210,27 @@ function selecionarFoto(foto) {
     fotoSelecionada.src = foto;
     ft.style.display = "none";
   }
+
+
+
+
+  const targ = document.querySelectorAll('[data-anime]');
+  const animacao = 'animate'
+
+  function animacaoscroll(){
+    const windowtop = window.pageYOffset + ((window.innerHeight *3) /4)
+    targ.forEach(function(element){
+        if((windowtop)> element.offsetTop){
+            element.classList.add(animacao);
+        } else{
+            element.classList.remove(animacao);
+        }
+    })
+  }
+
+  animacaoscroll();
+
+  window.addEventListener('scroll', function(){
+    animacaoscroll()
+})
+
