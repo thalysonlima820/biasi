@@ -836,10 +836,11 @@ footer{
 
 .missao{
     margin: 70px 20%;
+    display: flex;
 }
 
 .foto-misao{
-    width: 150px;
+    width: 197px;
     height: 120px;
     transform: rotate(-8deg); 
     background-color: yellow;
@@ -876,3 +877,50 @@ footer{
     border-top-right-radius: 37px;
     border-top-left-radius: 40px;
 }
+
+.foto-misao h2{
+    z-index: 999;
+    position: absolute;
+    color: #DE0000;
+    transform: rotate(8deg); 
+    margin-left: 20px;
+}
+.foto-misao img{
+    width: 100px;
+    height: 100px;
+    transform: rotate(16deg); 
+    position: absolute;
+    z-index: 9;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.foto-misao .limao{
+    transform: rotate(10deg);
+    margin-left: 10px;
+}
+.missao p {
+    position: relative;
+    margin-left: -20px;
+    z-index: -5;
+    background-color: #DE0000;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 20px;
+}
+.valores{
+    max-width: 780px;
+}
+
+.visao2{
+    width: 180px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 700px;
+    margin-left: -30px;
+}
+

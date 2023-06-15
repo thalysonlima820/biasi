@@ -401,6 +401,66 @@ margin-left: -30px;
         box-shadow: 1px 1px 1px transparent;
     }
 
+    
+.missao{
+    margin: 70px 5%;
+}
+        
+.foto-misao{
+    width: 155px;
+    height: 150px;
+}
+.foto-misao::after{
+    content: '';
+    width: 95px;
+    height: 130px; 
+    
+}
+
+.foto-misao::before{
+    content: '';
+    width: 145px;
+    height: 35px; 
+    z-index: 999;
+}
+
+.foto-misao h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.foto-misao img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.missao p {
+    margin-left: -25px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+.valores{
+    max-width: 200px;
+}
+
+.visao2{
+    width: 150px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 500px;
+    margin-left: -30px;
+}
+.missao .limao{
+    margin-top: 15px;    
+
+    
+}
+
 
 }
 
@@ -462,6 +522,66 @@ margin-left: -30px;
             gap: 2rem;
         }
     
+
+.missao{
+    margin: 70px 5%;
+}
+        
+.foto-misao{
+    width: 155px;
+    height: 120px;
+}
+.foto-misao::after{
+    content: '';
+    width: 95px;
+    height: 130px; 
+    
+}
+
+.foto-misao::before{
+    content: '';
+    width: 145px;
+    height: 35px; 
+    z-index: 999;
+}
+
+.foto-misao h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.foto-misao img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.missao p {
+    margin-left: -25px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    padding-bottom: 50px;
+    max-width: 200px;
+}
+.valores{
+    max-width: 200px;
+}
+
+.visao2{
+    width: 150px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 200px;
+    margin-left: -30px;
+}
+
+.btncum{
+    padding: 7px 7px;
+    border-radius: 10px;
+}
+
 }
 
 
@@ -478,6 +598,62 @@ margin-left: -30px;
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
+.missao{
+    margin: 70px 5%;
+}
+        
+.foto-misao{
+    width: 140px;
+    height: 120px;
+}
+.foto-misao::after{
+    content: '';
+    width: 95px;
+    height: 130px; 
+    
+}
+
+.foto-misao::before{
+    content: '';
+    width: 128px;
+    height: 35px; 
+    z-index: 999;
+}
+
+.foto-misao h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.foto-misao img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.missao p {
+    margin-left: -25px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    padding-bottom: 50px;
+    max-width: 180px;
+    font-size: 15px;
+}
+.valores{
+    max-width: 200px;
+}
+
+.visao2{
+    width: 150px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 180px;
+    margin-left: -30px;
+    
+}
 }
 
 
@@ -629,6 +805,65 @@ margin-left: -30px;
     nav p{
         font-size: 13px;
     }
+       
+.missao{
+    margin: 70px 20%;
+}
+        
+.foto-misao{
+    width: 155px;
+    height: 150px;
+}
+.foto-misao::after{
+    content: '';
+    width: 95px;
+    height: 130px; 
+    
+}
+
+.foto-misao::before{
+    content: '';
+    width: 145px;
+    height: 35px; 
+    z-index: 999;
+}
+
+.foto-misao h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.foto-misao img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.missao p {
+    margin-left: -25px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+.valores{
+    max-width: 200px;
+}
+
+.visao2{
+    width: 150px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 500px;
+    margin-left: -30px;
+}
+.missao .limao{
+    margin-top: 15px;    
+
+    
+}
 
 }
 
@@ -712,5 +947,65 @@ margin-left: -30px;
 }
 .fundo{
     height: 300%;
+}
+
+   
+.missao{
+    margin: 70px 5%;
+}
+        
+.foto-misao{
+    width: 155px;
+    height: 150px;
+}
+.foto-misao::after{
+    content: '';
+    width: 95px;
+    height: 130px; 
+    
+}
+
+.foto-misao::before{
+    content: '';
+    width: 145px;
+    height: 35px; 
+    z-index: 999;
+}
+
+.foto-misao h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.foto-misao img{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.missao p {
+    margin-left: -25px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 20px;
+    top: -5px;
+    padding-bottom: 50px;
+    max-width: 500px;
+}
+.valores{
+    max-width: 200px;
+}
+
+.visao2{
+    width: 150px;
+    height: 120px;
+}
+.missao .visao{
+    max-width: 500px;
+    margin-left: -30px;
+}
+.missao .limao{
+    margin-top: 15px;    
+
+    
 }
   }

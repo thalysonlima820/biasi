@@ -36,7 +36,7 @@ switch(diahoje){
         } else if(hora >=12 && hora<13){
             bv.innerHTML =` Boa Tarde <br>  Venha Conferir as Promoçoes dedomingo, Fecharemos em Breve`
         } else{
-            bv.innerHTML =` Boa noite  <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Segunda-Feira`
+            bv.innerHTML =` Boa noite  <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Segunda-Feira`
         }
         break
     case 1:
@@ -57,7 +57,7 @@ switch(diahoje){
             setores.innerHTML =`Promoção do setor Frios`
             prin.innerHTML = `Segunda dos Frios`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Terça-Feira`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Terça-Feira`
         }
         break
     case 2:
@@ -78,7 +78,7 @@ switch(diahoje){
             setores.innerHTML =`Promoção do setor de Limpeza`
             prin.innerHTML = `Terça da Limpeza`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Quarta-Feira`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Quarta-Feira`
         }
         break
     case 3:
@@ -99,7 +99,7 @@ switch(diahoje){
             setores.innerHTML =`Promoção do setor de Aves`
             prin.innerHTML = `Quarta do Framgo`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Quinta-Feira`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Quinta-Feira`
         }
         break
     case 4:
@@ -120,7 +120,7 @@ switch(diahoje){
             setores.innerHTML =`Promoção do setor de Açougue`
             prin.innerHTML = `Quinta do Filé`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Sexta-Feira`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Sexta-Feira`
         }
         break
     case 5:
@@ -142,7 +142,7 @@ switch(diahoje){
             setores.innerHTML =`Promoção do setor Hortifrute`
             prin.innerHTML = `Sexta  Verde`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Sabado`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Sabado`
         }
 
         
@@ -160,7 +160,7 @@ switch(diahoje){
         }else if(hora>=18 && hora<=19){
             bv.innerHTML =` Boa noite <br>  Venha Conferir as Promoçoes de Sabado, Estaremos aberto ate as 19:30, Corra que ainda da tempo`
         } else{
-            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechamo, Mas fique de olho nas promoçoes de Domingo`
+            bv.innerHTML =` Boa noite <br>  Nesse horario ja estamos fechados, Mas fique de olho nas promoçoes de Domingo`
         }
         break
 }
