@@ -465,7 +465,7 @@ margin-left: -30px;
  
  .suporte{
      border: none;
-     left: 20px;
+     margin-right: 20px;
 
      bottom: 8%;
  }
@@ -479,7 +479,7 @@ margin-left: -30px;
  
  #oi{    
      position: relative;
-     left: 80%;
+     left: 75%;
      display: block;
      margin: 0;
      padding: 0;
@@ -654,7 +654,7 @@ margin-left: -30px;
     
     #oi{    
         position: relative;
-        left: 110%;
+        left: 100%;
         display: block;
         margin: 0;
         padding: 0;
