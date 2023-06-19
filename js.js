@@ -234,3 +234,10 @@ function selecionarFoto(foto) {
     animacaoscroll()
 })
 
+
+
+const chk = document.querySelector('#chk')
+
+chk.addEventListener('click', ()=>{
+    document.body.classList.toggle('ala')
+})

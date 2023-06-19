@@ -945,3 +945,43 @@ footer{
 .cupomm1 .cupom1 .ala{
   display: none;
  }
+
+
+
+ #chk{
+    display: none;
+}
+
+ .box{
+    width: 60px;
+    height: 30px;
+    background-color: #777;
+    position: relative;
+    border-radius: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all .7s ease-in-out;
+}
+.bola{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 50%;
+    transition: all .7s ease-in-out;
+}
+#chk:checked ~ .box{
+    background-color: blueviolet;
+}
+#chk:checked ~ .box .bola{
+    transform: translateX(30px);
+}
+
+
+body.ala{
+    background-color: black;
+    transition: background 2s linear;
+    filter: brightness(50%);
+}
