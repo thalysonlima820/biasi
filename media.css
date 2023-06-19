@@ -889,7 +889,11 @@ height: 35%;
 .navegcao-primaria #fe{
     display: none;
 }
-
+.alava{
+    position: relative;
+    margin-top: 94px;
+    margin-left: 80%;
+}
 
 }
 

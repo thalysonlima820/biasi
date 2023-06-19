@@ -571,6 +571,7 @@ transform: rotatez(-10deg);
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   margin-top: 70px;
 }
 
 .slides input{
@@ -980,8 +981,11 @@ footer{
 }
 
 
-body.ala{
+.ala{
     background-color: black;
     transition: background 2s linear;
     filter: brightness(50%);
+}
+.alava{
+    display: none;
 }
