@@ -647,6 +647,8 @@ margin-left: -30px;
         max-width: 400px;
         font-size: 14px;
         padding: 20px;
+        background-color: #fffb00;
+        color: black;
     }
     .gg{
         margin-top: -40px;
@@ -673,12 +675,15 @@ margin-left: -30px;
 .pula{
     margin-top: 100px;
     margin-left: -30%;
+    
     margin-right: 20PX;
 }
 .pula h1{
     max-width: 200px;
     font-size: 13px;
     padding: 50PX 4PX;
+    background-color: #fffb00;
+    color: black;
 }
 .teste{
 
@@ -835,20 +840,45 @@ height: 35%;
     height: 190px;
     margin-top: 100px;
     margin-left: 0;
+    background-color: #fffb00;
+    border: none;
+    box-shadow: 5PX 5PX 5PX 5PX black;
 }
 .cupomm1 .cupom1 h3{
     font-size: 26px;
+    color: #DE0000;
 }
 .cupomm1 .cupom1 p{
     font-size: 13px;
+    color: black;
+}
+ .cup3{
+    display: none;
 }
 .cupomm1 .cupom1 input{
     font-size: 12px;
+    background-color: #DE0000;
+ }
+ .cupomm1 .cupom1 .btncum{
+    padding: 5px 5px;
  }
 
  .pula a{
     display: none;
  }
+ 
+.img-cupom{
+    display: none;
+}
+ .cupomm1 .cupom1 .ala{
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+ }
+
+
 
 }
 
