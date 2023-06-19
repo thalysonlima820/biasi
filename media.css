@@ -642,15 +642,83 @@ margin-left: -30px;
 }
 
 @media (max-width: 450px){
-    .pagina_1 .pula{
-        display: none;
+    .gg ul li{
+        text-align: center;
+        max-width: 400px;
+        font-size: 14px;
+        padding: 20px;
     }
+    .gg{
+        margin-top: -40px;
+        margin-left: -30px;
+    }
+
     header{
         background-image: url(bi/biasi\ cell1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        height: 130PX;
     }
+    .fundo{
+        display: none;
+    
+    }
+    body{
+        background-color: red;
+    }
+    
+
+      
+.pula{
+    margin-top: 100px;
+    margin-left: -30%;
+    margin-right: 20PX;
+}
+.pula h1{
+    max-width: 200px;
+    font-size: 13px;
+    padding: 50PX 4PX;
+}
+.teste{
+
+    margin-bottom: -30px;
+}
+
+.teste1{
+margin-left: -6px;
+width: 35%;
+height: 35%;
+}
+.teste2{
+    margin-bottom: -30px;
+    width: 25%;
+    height: 25%;
+}
+.teste3{
+    margin-left: -25px;
+    width: 35%;
+    height: 35%;
+}
+
+
+.teste4{
+   margin-left: 80px;
+   width: 50%;
+   height: 50%;
+   margin-bottom: -30px;
+}
+
+
+.cel{
+    display: flex;
+    position: absolute;
+    margin-top: 70px;
+    width: 48%;
+    height: 30%;
+}
+
+
     
     #oi{    
         position: relative;
@@ -689,7 +757,7 @@ margin-left: -30px;
             width: 345px;
         }
         .services{
-            margin-top: -150px;
+            margin-top: -100px;
         }
         nav p{
             font-size: 45px;
@@ -758,6 +826,29 @@ margin-left: -30px;
     padding: 7px 7px;
     border-radius: 10px;
 }
+
+.cupomm1{
+    margin-top: 170px;
+}
+.cupomm1 .cupom1{
+    width: 340px;
+    height: 190px;
+    margin-top: 100px;
+    margin-left: 0;
+}
+.cupomm1 .cupom1 h3{
+    font-size: 26px;
+}
+.cupomm1 .cupom1 p{
+    font-size: 13px;
+}
+.cupomm1 .cupom1 input{
+    font-size: 12px;
+ }
+
+ .pula a{
+    display: none;
+ }
 
 }
 
