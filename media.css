@@ -859,6 +859,7 @@ height: 35%;
 }
 .cupomm1 .cupom1 input{
     font-size: 12px;
+    margin-left: -20px;
     background-color: #DE0000;
  }
  .cupomm1 .cupom1 .btncum{
@@ -873,7 +874,7 @@ height: 35%;
     display: none;
 }
  .cupomm1 .cupom1 .ala{
-    display: flex;
+    display: ;
     z-index: 999;
     position: absolute;
     width: 60px;
@@ -890,6 +891,7 @@ height: 35%;
     display: none;
 }
 .alava{
+    display: flex;
     position: relative;
     margin-top: 94px;
     margin-left: 80%;
